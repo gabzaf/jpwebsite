@@ -1,0 +1,44 @@
+header{
+	background: url("primeira.jpg");
+	padding: 20px 0;		/*espacamento interno p cima e p baixo e 0 p esquerda e p direita*/
+}
+.caixa{
+	position: relative;
+	width: 1240px;			/*largura fixa, essa é uma largura padrao usada na web*/
+	margin: 0 auto;
+}
+nav{						/*criação do posicionamento da tag nav*/
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+nav li{					/*todos os itens da lista que estao dentro do menu navegação*/
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase;					/*todos os links da navegação tenham letras em maiusculo, nao mudei meu HTML, nao alterei a estrutura do html, so alterei o comportamento visual daquele HTML*/
+	color: #000000;
+	font-weight: bold;							/*texto em negrito*/
+	font-size: 22px;
+	text-decoration: none;						/*remover decoração do texto*/
+}
+.apresentacao{
+	padding-left: 20px;
+	width: 1240px;			
+	margin: 0 auto;
+}
+footer{
+	text-align: center;
+	background: url("terceira.jpg");
+	padding: 40px;
+}
+.copyright{
+	color: #000000;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+.image{
+	width: 80%;
+	height: 80%;
+}

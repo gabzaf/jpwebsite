@@ -1,0 +1,79 @@
+header{
+	background: #BBBBBB;
+	padding: 20px 0;		/*espacamento interno p cima e p baixo e 0 p esquerda e p direita*/
+}
+.caixa{
+	position: relative;
+	width: 1240px;			/*largura fixa, essa é uma largura padrao usada na web*/
+	margin: 0 auto;
+}
+nav{						/*criação do posicionamento da tag nav*/
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+nav li{					/*todos os itens da lista que estao dentro do menu navegação*/
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase;					/*todos os links da navegação tenham letras em maiusculo, nao mudei meu HTML, nao alterei a estrutura do html, so alterei o comportamento visual daquele HTML*/
+	color: #000000;
+	font-weight: bold;							/*texto em negrito*/
+	font-size: 22px;
+	text-decoration: none;						/*remover decoração do texto*/
+}
+.servico{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+.servico li{
+	display: inline-block;
+	text-align: center;
+	width: 33%;
+	vertical-align: top;
+	margin: 0 1%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+.servico li:hover{
+	border-color: #C78C19;
+}
+.servico li:active{
+	border-color: #088C19;
+}
+.servico li:hover h2{
+	font-size: 34px;
+}
+.servico h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+.produto-descricao{
+	font-size: 18px;
+}
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+footer{
+	text-align: center;
+	background: url("terceira.jpg");
+	padding: 40px;
+}
+.copyright{
+	color: #000000;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+.imagi{
+	width: 100%;
+}
