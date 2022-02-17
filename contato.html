@@ -24,33 +24,39 @@
 
 		<main>
 			<form>																	<!-- sempre que crio um formulario, tenho essa estrutura básica, tag form ,a tag label, tag input -->
-				<label for="nomesobrenome">Nome e Sobrenome</label>					<!-- Essa par label/input sempre anda junto -->
-				<input type="text" id="nomesobrenome">
+				<label for="nomesobrenome">Nome e Apelido</label>					<!-- Essa par label/input sempre anda junto -->
+				<input type="text" id="nomesobrenome" class="input-padrao">
 
 				<label for="email">Email</label>
-				<input type="text" id="email">
+				<input type="text" id="email" class="input-padrao">
 
 				<label for="telemovel">Telemóvel</label>
-				<input type="text" id="telemovel">
+				<input type="text" id="telemovel" class="input-padrao">
 
 				<label for="mensagem">Mensagem</label>
-				<textarea cols="80" rows="10" id="mensagem"></textarea>
+				<textarea cols="80" rows="10" id="mensagem" class="input-padrao"></textarea>
 
 				<div>
 					<p>Qual a vossa preferência de contacto?</p>
-					<label for="radio-email">Email</label>
-					<input type="radio" name="contato" value="email" id="radio-email">
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					
 
-					<label for="radio-chamada">Chamada Telemóvel</label>
-					<input type="radio" name="contato" value="chamada" id="radio-chamada">
+					<label for="radio-chamada"><input type="radio" name="contato" value="chamada" id="radio-chamada">Chamada Telemóvel</label>
+					
 
-					<label for="radio-whatsapp">Whatsapp</label>
-					<input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+				</div>
 
-					<input type="submit" value="Enviar mensagem!">					<!-- Todo formulario sempre vai ter um input do tipo submit, envio, que mando para algum servidor -->
-				</div>	
-
-				<label><input type="checkbox">Gostava de receber nossas novidades?</label>
+				<div>
+					<p>Qual horário para contacto?</p>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>				
+					</select>
+				</div>
+				<label class="checkbox"><input type="checkbox">Gostava de receber nossas novidades?</label>
+				<input type="submit" value="Enviar mensagem!">					<!-- Todo formulario sempre vai ter um input do tipo submit, envio, que mando para algum servidor -->
 			</form>
 		</main>
 
