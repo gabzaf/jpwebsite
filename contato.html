@@ -5,18 +5,59 @@
 		<meta charset="utf-8">
 		<title>JatobaPhotos - Contato</title>
 		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="contato.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
 		<header>
-			
+			<div class="caixa">
+				<h1><a href="home.html"><img src="logo.png"></a></h1>
+				<nav>	
+					<ul>
+						<li><a href="home.html">Home</a></li>							
+						<li><a href="servicos.html">Serviços</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>			
 		</header>
+
 		<main>
-			
+			<form>																	<!-- sempre que crio um formulario, tenho essa estrutura básica, tag form ,a tag label, tag input -->
+				<label for="nomesobrenome">Nome e Sobrenome</label>					<!-- Essa par label/input sempre anda junto -->
+				<input type="text" id="nomesobrenome">
+
+				<label for="email">Email</label>
+				<input type="text" id="email">
+
+				<label for="telemovel">Telemóvel</label>
+				<input type="text" id="telemovel">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="80" rows="10" id="mensagem"></textarea>
+
+				<div>
+					<p>Qual a vossa preferência de contacto?</p>
+					<label for="radio-email">Email</label>
+					<input type="radio" name="contato" value="email" id="radio-email">
+
+					<label for="radio-chamada">Chamada Telemóvel</label>
+					<input type="radio" name="contato" value="chamada" id="radio-chamada">
+
+					<label for="radio-whatsapp">Whatsapp</label>
+					<input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+
+					<input type="submit" value="Enviar mensagem!">					<!-- Todo formulario sempre vai ter um input do tipo submit, envio, que mando para algum servidor -->
+				</div>	
+
+				<label><input type="checkbox">Gostava de receber nossas novidades?</label>
+			</form>
 		</main>
+
 		<footer>
-			
+			<img src="logo.png">
+			<p class="copyright">Copyright &copy; Jatobá - 2022</p>
 		</footer>
+
 	</body>
 </html>
