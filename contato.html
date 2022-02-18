@@ -11,7 +11,7 @@
 	<body>
 		<header>
 			<div class="caixa">
-				<h1><a href="home.html"><img src="logo.png"></a></h1>
+				<h1><a href="home.html"><img src="logo.png" alt="Logo da Jatoba Photos"></a></h1>
 				<nav>	
 					<ul>
 						<li><a href="home.html">Home</a></li>							
@@ -25,43 +25,58 @@
 		<main>
 			<form>																	<!-- sempre que crio um formulario, tenho essa estrutura básica, tag form ,a tag label, tag input -->
 				<label for="nomesobrenome">Nome e Apelido</label>					<!-- Essa par label/input sempre anda junto -->
-				<input type="text" id="nomesobrenome" class="input-padrao">
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
 
 				<label for="email">Email</label>
-				<input type="text" id="email" class="input-padrao">
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
 				<label for="telemovel">Telemóvel</label>
-				<input type="text" id="telemovel" class="input-padrao">
+				<input type="tel" id="telemovel" class="input-padrao" required placeholder="XXX XXX XXX">
 
 				<label for="mensagem">Mensagem</label>
-				<textarea cols="80" rows="10" id="mensagem" class="input-padrao"></textarea>
+				<textarea cols="80" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
-				<div>
-					<p>Qual a vossa preferência de contacto?</p>
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+				<fieldset>
+					<legend>Qual a vossa preferência de contacto?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" checked>Email</label>
 					
 
 					<label for="radio-chamada"><input type="radio" name="contato" value="chamada" id="radio-chamada">Chamada Telemóvel</label>
 					
 
 					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
-				</div>
+				</fieldset>
 
-				<div>
-					<p>Qual horário para contacto?</p>
+				<fieldset>
+					<legend>Qual horário para contacto?</legend>
 					<select>
 						<option>Manhã</option>
 						<option>Tarde</option>
 						<option>Noite</option>				
 					</select>
-				</div>
-				<label class="checkbox"><input type="checkbox">Gostava de receber nossas novidades?</label>
-				<input type="submit" value="Enviar mensagem!">					<!-- Todo formulario sempre vai ter um input do tipo submit, envio, que mando para algum servidor -->
+				</fieldset>
+				<label class="checkbox"><input type="checkbox" checked>Gostava de receber nossas novidades?</label>
+				<input type="submit" value="Submeter mensagem!" class="submeter">	<!-- Todo formulario sempre vai ter um input do tipo submit, envio, que mando para algum servidor -->
 			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário de funcionamento</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda à sexta </td>
+						<td>9h às 17h</td>
+					</tr>
+				</tbody>
+			</table>
 		</main>
 
 		<footer>
-			<img src="logo.png">
+			<img src="logo.png" alt="Logo da Jatoba Photos">
 			<p class="copyright">Copyright &copy; Jatobá - 2022</p>
 		</footer>
 
