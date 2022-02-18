@@ -3,10 +3,11 @@
 <html lang="pt-br">
 	<head>				
 		<meta charset="utf-8">
-		<title>JatobaPhotos - Home</title>
+		<title>Jatobá Photos - Home</title>
 		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style-home.css">   									<!-- chamada para css no head pq é uma info que passo para o navegador -->
+		<link rel="stylesheet" href="style.css">   									<!-- chamada para css no head pq é uma info que passo para o navegador -->
 	</head>
+
 	<body> 
 		<header>											
 			<div class="caixa">
@@ -20,12 +21,40 @@
 				</nav>
 			</div>			
 		</header>
-		<main class="apresentacao">
-			<img src="primeira.jpg" class="image">						
+		<img class="banner" src="primeira.jpg">
+		<main>
+			<section class="principal">
+				<h2 class="titulo-principal">About</h2>
+				<img class="imagem-about" src="setima.jpg" alt="Utensílios de um fotógrafo">
+				<p>
+					Jatoba Photos é uma empresa de fotografia blabla	<!-- alterar classes -->
+				</p>
+			</section>
+			<section class="principal">
+				<h3 class="titulo-principal">Photo</h3>
+				<img class="imagem-photo" src="quinta.jpg">
+				<p>
+					As fotos sao blabla    <!-- alterar float no css --> 
+				</p>
+			</section>
+			<section class="principal">
+				<h4 class="titulo-principal">Retouch</h4>
+				<p>
+					O retouch...
+				</p>
+			</section>
+			<section class="principal">
+				<h5 class="titulo-principal">GraphDesign</h5>
+				<p>
+					O graphdesign é ...
+				</p>
+			</section>						
 		</main>
+
 		<footer>
-			<img src="logo.png">
+			<img src="logo.png" width="280" height="150">
 			<p class="copyright">Copyright &copy; Jatobá - 2022</p>
 		</footer>
+
 	</body>
 </html>

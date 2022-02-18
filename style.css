@@ -1,5 +1,8 @@
+html{
+	background: url("quarta.jpg");
+}
 header{
-	background: url("primeira.jpg");
+	
 	padding: 20px 0;		/*espacamento interno p cima e p baixo e 0 p esquerda e p direita*/
 }
 .caixa{
@@ -66,7 +69,6 @@ nav a:hover{
 }
 footer{
 	text-align: center;
-	background: url("terceira.jpg");
 	padding: 40px;
 }
 .copyright{
@@ -81,7 +83,6 @@ main {
 	width: 940px;
 	margin: 0 auto;
 }
-
 form{
 	margin: 40px 0;
 }
@@ -115,7 +116,7 @@ form label, form legend{
 	background: darkgreen;
 	transform: scale(1.2);
 }
-table{
+/*table{
 	width: 40%;
 	margin: 20px 0 40px;
 }
@@ -128,4 +129,35 @@ td, th{
 	border: 1px solid #000000;
 	padding: 8px 15px;
 	text-align: center;
+}*/
+
+/*css da página inicial*/
+.banner{
+	width: 100%;
+	margin: 0 auto;
 }
+.titulo-principal{
+	text-align: center;
+	font-size: 3em;
+	margin: 0 0 1em;
+	clear: left;
+}
+.principal p{
+	margin: 0 0 1em;
+}
+.principal strong{
+	font-weight: bold;
+}
+.principal em{
+	font-style: italic;
+}
+.imagem-about{
+	width: 300px;
+	float: left;
+	margin: 0 100px 100px 0px;
+}
+/*.imagem-photo{
+	width: 50%;
+	float: right;
+	margin: 0 100px 100px 0px;
+}*/
