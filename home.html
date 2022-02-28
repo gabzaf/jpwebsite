@@ -1,60 +1,105 @@
 <!DOCTYPE html>
 
-<html lang="pt-br">
+<html lang="pt">
+
 	<head>				
 		<meta charset="utf-8">
 		<title>Jatobá Photos - Home</title>
 		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">   									<!-- chamada para css no head pq é uma info que passo para o navegador -->
+		<link rel="stylesheet" href="style.css"> <!-- chamada p css no head pq é uma info q passo p o navegador -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
 
 	<body> 
-		<header>											
+
+		<header>
+
 			<div class="caixa">
+
 				<h1><a href="home.html"><img src="logo.png"></a></h1>
+
 				<nav>	
 					<ul>
 						<li><a href="home.html">Home</a></li>							
 						<li><a href="servicos.html">Serviços</a></li>
-						<li><a href="contato.html">Contato</a></li>
+						<li><a href="contato.html">Contacto</a></li>
 					</ul>
 				</nav>
-			</div>			
+
+			</div>
+
 		</header>
-		<img class="banner" src="primeira.jpg">
+
+		
+		<img src="primeira.jpg" class="banner">
+		
+
 		<main>
+
 			<section class="principal">
+
 				<h2 class="titulo-principal">About</h2>
-				<img class="imagem-about" src="setima.jpg" alt="Utensílios de um fotógrafo">
-				<p>
-					Jatoba Photos é uma empresa de fotografia blabla	<!-- alterar classes -->
-				</p>
+
+				<div class="conteudo-about">
+					<img src="utensilios-fotografo.jpg" class="imagem-about"  alt="Utensílios de um fotógrafo">
+					<p>Jatoba Photos é uma empresa de fotografia, edição de imagens e design gráfico. Prezamos pelo gosto na produção de nossas criações artísticas.</p>
+				</div>
+
 			</section>
+
 			<section class="principal">
+
 				<h3 class="titulo-principal">Photo</h3>
-				<img class="imagem-photo" src="quinta.jpg">
+				<!-- <img class="imagem-photo" src="quinta.jpg"> -->
 				<p>
 					As fotos sao blabla    <!-- alterar float no css --> 
 				</p>
+
 			</section>
+
 			<section class="principal">
+
 				<h4 class="titulo-principal">Retouch</h4>
 				<p>
 					O retouch...
 				</p>
+
+				<div class="video">
+					<iframe width="980" height="400" src="https://www.youtube.com/embed/89AowdLeZUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+
 			</section>
+
 			<section class="principal">
+
 				<h5 class="titulo-principal">GraphDesign</h5>
 				<p>
 					O graphdesign é ...
 				</p>
-			</section>						
+
+			</section>
+
+			<section class="mapa">
+
+				<h6 class="titulo-principal">Nosso escritório</h6>
+				<p>Nosso escitório é localizado no coração do concelho.</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.3460982355164!2d-8.603425428654784!3d41.14879869103593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464ee342a6ebf%3A0xb06d2dfffc911ba6!2sR.%20de%20Dom%20Jo%C3%A3o%20IV%20252%2C%204000-298%20Porto!5e0!3m2!1sen!2spt!4v1646055498500!5m2!1sen!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+			</section>
+
 		</main>
 
 		<footer>
+
 			<img src="logo.png" width="280" height="150">
 			<p class="copyright">Copyright &copy; Jatobá - 2022</p>
+
 		</footer>
 
 	</body>
+
 </html>
