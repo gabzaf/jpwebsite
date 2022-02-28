@@ -84,6 +84,7 @@ footer{
 main {
 	width: 940px;
 	margin: 0 auto;
+	/*background: linear-gradient(white,#E8E8F0, #C9C9DB);*/	
 }
 form{
 	margin: 40px 0;
@@ -151,6 +152,22 @@ td, th{
 	margin: 0 0 1em;
 	clear: left;
 }
+.titulo-principal2{
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	margin: 0 0 1em;
+	clear: left;
+}
+.titulo-principal2:before{
+	content: "📷";
+}
+.principal{
+	padding: 1em 0;
+	/*background: #F6F6F6;*/
+	width: 940px;
+	margin: 0 auto;
+}
 .principal p{
 	font-size: 1em;
 	margin: 0 0 1em;
@@ -174,16 +191,26 @@ td, th{
 	float: left;
 	margin: 0 100px 100px 0px;
 }
-/*.imagem-photo{
+.conteudo-photo{
+	width: 50%;
+	margin: 0 auto;
+	display: inline;
+	vertical-align: middle;
+}
+.imagem-photo{
 	width: 50%;
 	float: right;
 	margin: 0 100px 100px 0px;
-}*/
+}
 .video{
 	margin: 2em auto;
 }
 .mapa{
-	padding: 2em 0;
+	padding: 1em 0;
+}
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
 }
 .mapa p{
 	margin: 0 0 2em;
