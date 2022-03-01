@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="pt">
-
 	<head>				
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
 		<title>Jatobá Photos - Home</title>
+
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css"> <!-- chamada p css no head pq é uma info q passo p o navegador -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,11 +13,8 @@
 	</head>
 
 	<body> 
-
 		<header>
-
 			<div class="caixa">
-
 				<h1><a href="home.html"><img src="logo.png"></a></h1>
 
 				<nav>	
@@ -27,35 +24,28 @@
 						<li><a href="contato.html">Contacto</a></li>
 					</ul>
 				</nav>
-
 			</div>
-
 		</header>
 
+		<img class="banner" src="primeira.jpg" >
 		
-		<img src="primeira.jpg" class="banner">
-		
-
 		<main>
 
 			<section class="principal">
 
 				<h2 class="titulo-principal">About</h2>
-
-				<div class="conteudo-about">
-					<img src="utensilios-fotografo.jpg" class="imagem-about"  alt="Utensílios de um fotógrafo">
-					<p>
-					Jatoba Photos é uma empresa de fotografia, edição de imagens e design gráfico. Prezamos pelo gosto na produção de nossas criações artísticas.
-					</p>
-				</div>
-
+				<img class="image-about" src="utensilios-fotografo.jpg" alt="Utensílios de um fotógrafo">
+				<p>
+				<strong>Jatoba Photos</strong> é uma empresa de fotografia, edição de imagens e design gráfico. Prezamos pelo gosto na produção de nossas criações artísticas.
+				</p>
+			
 			</section>
 
 			<section class="principal">
 
 				<div class="conteudo-photo">
 					<h3 class="titulo-principal2">Photo</h3>
-					<img src="quinta.jpg" class="imagem-photo" alt="Olhar da fotógrafa!">
+					<img class="image-photo" src="quinta.jpg" alt="Olhar da fotógrafa!">
 					<p>
 						Quando você fotografa pessoas em cores, você fotografa suas roupas. Mas quando você fotografa pessoas em P&B, você fotografa suas almas.    <!-- alterar float no css --> 
 					</p>
@@ -71,7 +61,7 @@
 
 				<div class="video">
 
-					<iframe width="980" height="400" src="https://www.youtube.com/embed/89AowdLeZUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					<iframe width="100%" height="400" src="https://www.youtube.com/embed/89AowdLeZUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
 
 				</div>
@@ -101,10 +91,10 @@
 		</main>
 
 		<footer>
-
-			<img src="logo.png" width="280" height="150">
-			<p class="copyright">Copyright &copy; Jatobá - 2022</p>
-
+			<div class="footer-image">
+				<img src="logo.png">
+				<p class="copyright">Copyright &copy; Jatobá - 2022</p>
+			</div>
 		</footer>
 
 	</body>
