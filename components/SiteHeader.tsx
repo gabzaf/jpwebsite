@@ -14,7 +14,12 @@ export function SiteHeader({ locale }: Props) {
     <header>
       <div className="caixa header-linha">
         <Logo href={`/${locale}`} />
-        <LanguageSwitch locale={locale} label={dict.langLabel} />
+        <div className="header-direita">
+          <a className="nav-texto" href={`/${locale}#servicos`}>
+            {dict.servicesTitle}
+          </a>
+          <LanguageSwitch locale={locale} label={dict.langLabel} />
+        </div>
       </div>
     </header>
   );

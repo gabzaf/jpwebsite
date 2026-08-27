@@ -3,7 +3,6 @@ export const SITE = {
   shortName: "Alves Jatobá",
   tagline: "Creative Studio",
   city: "Porto",
-  addressLine: "Rua de Dom João IV 252, 4000-298 Porto",
   instagramHandle: "alvesjatoba.cs",
   instagramUrl: "https://www.instagram.com/alvesjatoba.cs/",
   behanceUrl: "https://www.behance.net/jatobaphotos",
