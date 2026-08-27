@@ -7,7 +7,7 @@ next-env.d.ts
 
 # Original assets that were never in git
 design.jpg
-logo.png
+/logo.png
 primeira.jpg
 segunda.jpg
 terceira.jpg

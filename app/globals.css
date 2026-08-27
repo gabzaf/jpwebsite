@@ -123,6 +123,13 @@ header {
 	color: inherit;
 }
 
+.logo img {
+	display: block;
+	height: 52px;
+	width: auto;
+	max-width: 220px;
+}
+
 .monogram {
 	width: 2.6rem;
 	height: 2.6rem;
@@ -597,8 +604,8 @@ footer .copyright a {
 	color: #f3eee6;
 }
 
-footer .monogram {
-	box-shadow: 0 0 0 1px rgba(243, 238, 230, 0.25);
+footer .logo img {
+	filter: brightness(0) invert(1);
 }
 
 .copyright {

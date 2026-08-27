@@ -1,0 +1,27 @@
+# Public studio site behind Traefik (Cloud-Linux-Self-Hosting /srv layout).
+# Copy this project to /srv/apps/alves-jatoba on the VPS, then: docker compose up -d --build
+
+services:
+  web:
+    build: .
+    image: alves-jatoba:1.0.0
+    container_name: alves-jatoba
+    restart: unless-stopped
+    networks:
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.alvesjatoba.rule=Host(`alvesjatoba.com`) || Host(`www.alvesjatoba.com`)
+      - traefik.http.routers.alvesjatoba.entrypoints=websecure
+      - traefik.http.routers.alvesjatoba.tls=true
+      - traefik.http.routers.alvesjatoba.middlewares=security-headers@file
+      - traefik.http.services.alvesjatoba.loadbalancer.server.port=3000
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+
+networks:
+  proxy:
+    external: true
