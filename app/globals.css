@@ -189,10 +189,29 @@ nav a {
 }
 
 nav a:hover,
-nav a.ativo {
+nav a.ativo,
+.lang-switch a.ativo {
 	color: var(--ouro);
 	text-decoration: underline;
 	text-underline-offset: 0.35em;
+}
+
+.lang-switch {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+}
+
+.lang-switch a {
+	color: var(--navy);
+	text-decoration: none;
+}
+
+.lang-switch span {
+	color: var(--muted);
 }
 
 .banner {

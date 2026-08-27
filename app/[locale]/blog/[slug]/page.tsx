@@ -1,25 +1,32 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBlogPost, getBlogPosts } from "@/lib/blog";
+import { getDictionary } from "@/lib/dictionaries";
+import { isLocale, LOCALES } from "@/lib/i18n";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 };
 
 export function generateStaticParams() {
-  return getBlogPosts().map((post) => ({ slug: post.slug }));
+  const posts = getBlogPosts();
+  return LOCALES.flatMap((locale) => posts.map((post) => ({ locale, slug: post.slug })));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const post = getBlogPost(slug);
-  return { title: post?.title ?? "Artigo" };
+  const dict = isLocale(locale) ? getDictionary(locale) : getDictionary("pt");
+  return { title: post?.title ?? dict.blogArticle };
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug } = await params;
-  const post = getBlogPost(slug);
+  const { locale, slug } = await params;
+  if (!isLocale(locale)) {
+    notFound();
+  }
 
+  const post = getBlogPost(slug);
   if (!post) {
     notFound();
   }

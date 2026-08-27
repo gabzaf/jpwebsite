@@ -1,8 +1,12 @@
 import Link from "next/link";
 
-export function Logo() {
+type Props = {
+  href?: string;
+};
+
+export function Logo({ href = "/" }: Props) {
   return (
-    <Link className="logo" href="/">
+    <Link className="logo" href={href}>
       <img src="/Logo2Grafite.png" alt="Alves Jatobá Creative Studio" />
     </Link>
   );
