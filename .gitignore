@@ -1,3 +1,11 @@
+# Next.js
+.next/
+out/
+node_modules/
+*.tsbuildinfo
+next-env.d.ts
+
+# Original assets that were never in git
 design.jpg
 logo.png
 primeira.jpg
